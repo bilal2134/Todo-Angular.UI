@@ -1,0 +1,73 @@
+/* Base styling for the navbar */
+.navbar {
+    background-image: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Container to ensure content is centered and padded correctly */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.3125rem 0;
+  }
+  
+  /* Toggler icon styling */
+  .navbar-toggler {
+    border: none;
+    background-color: transparent; /* Removes default border */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+  }
+  
+  /* Navbar links styling */
+  .nav-link {
+    color: #fff;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover, .nav-link.active {
+    color: #ade8f4; /* Light blue for hover and active state */
+  }
+  
+  /* Responsive navbar */
+  @media (max-width: 992px) {
+    .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .nav-item {
+      text-align: center;
+    }
+  
+    .collapse:not(.show) {
+      display: none;
+    }
+  
+    .navbar-toggler {
+      display: block;
+    }
+  }
+  
+  /* Additional responsive adjustments */
+  @media (min-width: 993px) {
+    .navbar-nav {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .navbar-collapse {
+      justify-content: flex-end;
+    }
+  }

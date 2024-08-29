@@ -1,0 +1,91 @@
+/* Container and overall layout */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9; /* Light background for the container */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .row {
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styling */
+  form {
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); /* Gradient background */
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .form-label {
+    color: #fff; /* White color for contrast */
+  }
+  
+  .form-control {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  /* Button styling */
+  .btn-primary {
+    background-color: #2575fc; /* Solid color fallback */
+    background-image: linear-gradient(to right, #000000 0%, #2575fc 100%); /* Gradient background */
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-image: linear-gradient(to right, #2575fc 0%, #6a11cb 100%);
+  }
+  
+  /* Table styling */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table th {
+    background: linear-gradient(to bottom, #7d6a93 0%, #456eb3 100%);
+    color: #fff;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Additional styles for completed tasks */
+  .stroke {
+    text-decoration: line-through;
+    color: #999;
+  }
+
+
+
+
+/* Header Styling */
+h1 {
+    color: #007bff; /* Bootstrap primary blue */
+    text-align: center;
+    margin-bottom: 30px; /* More space below the header */
+    font-size: 2.5rem; /* Larger font size */
+    text-transform: uppercase; /* UPPERCASE text */
+    letter-spacing: 1.5px; /* Spacing between letters */
+  }
